@@ -1,0 +1,6 @@
+{
+  "name": "NEONBEAT",
+  "description": "Electric Pulse Event discovery and Interactive Seating Reservation Platform with active ticket workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
