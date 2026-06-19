@@ -68,12 +68,12 @@ cp .env.example .env
 **Example `.env`:**
 
 ```env
-MONGO_URI=mongodb+srv://user:password@cluster.mongodb.net/sortmyscene?retryWrites=true&w=majority
-JWT_SECRET=your_secret_key_12345
+MONGO_URI=""
+JWT_SECRET=""
 JWT_EXPIRES_IN=7d
 PORT=5000
 NODE_ENV=development
-CLIENT_URL=http://localhost:5173
+CLIENT_URL=""
 ```
 
 ### Step 3: Seed the Database
@@ -111,7 +111,7 @@ curl http://localhost:5000
 
 Response:
 ```json
-{ "status": "SortMyScene API is running 🎟️" }
+{ "status": "SortMyScene API is running " }
 ```
 
 ---
