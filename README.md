@@ -10,15 +10,15 @@
 ### 1. Backend
 
 
-cd backend/sortmyscene-backend
-npm install
-npm run seed           # populate sample events + seats
+cd backend
+npm install,
+npm run seed,           # populate sample events + seats
 npm run dev            # starts on http://localhost:5000
 
 ### 2. Frontend
 
 cd frontend
-npm install
+npm install,
 npm run dev            # starts on http://localhost:3000
 
 
