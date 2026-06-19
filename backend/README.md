@@ -1,8 +1,5 @@
 # SortMyScene — Event Ticket Booking Backend
 
-A robust, production-ready Node.js backend for an event ticketing platform with atomic seat reservations, double-booking prevention, and expiring reservations.
-
----
 
 ## 📋 Table of Contents
 
@@ -91,7 +88,7 @@ This creates 3 sample events (Coldplay, Sunburn Festival, Mumbai Film Festival) 
 
 ---
 
-## 🚀 Running the Server
+##  Running the Server
 
 ### Development Mode (with auto-reload)
 
@@ -119,7 +116,7 @@ Response:
 
 ---
 
-## 📡 API Documentation
+##  API Documentation
 
 ### Base URL
 
@@ -403,7 +400,7 @@ Authorization: Bearer <TOKEN>
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 ### Collections
 
@@ -470,7 +467,7 @@ Authorization: Bearer <TOKEN>
 
 ---
 
-## 💡 Design Decisions
+##  Design Decisions
 
 ### 1. **Atomic Seat Reservations (Double-Booking Prevention)**
 
@@ -572,13 +569,13 @@ This keeps the codebase maintainable and testable.
 
 ---
 
-## 🔒 Key Constraints & Solutions
+##  Key Constraints & Solutions
 
 ### Constraint 1: Prevent Double Booking
 
 | Approach | Pros | Cons |
 |----------|------|------|
-| **MongoDB Transactions** ✅ | Atomic, truly prevents race conditions | Requires replica set |
+| **MongoDB Transactions**  | Atomic, truly prevents race conditions | Requires replica set |
 | Locking (Redis) | Effective | Extra infrastructure |
 | Application-level mutex | Simple | Doesn't work across processes |
 
@@ -638,7 +635,7 @@ Frontend uses this to show which specific seats became unavailable.
 
 ---
 
-## ⚠️ Error Handling
+## Error Handling
 
 ### Global Error Handler
 
@@ -685,7 +682,7 @@ if (error.name === "ValidationError") {
 
 ---
 
-## 📝 Assumptions
+##  Assumptions
 
 1. **MongoDB Replica Set:**  
    Transactions require a replica set. Local MongoDB deployments or Atlas dev tier may not support this. For testing, use MongoDB Atlas (free tier supports transactions).
@@ -714,7 +711,7 @@ if (error.name === "ValidationError") {
 
 ---
 
-## 🧪 Testing the API
+##  Testing the API
 
 ### 1. Register
 
@@ -777,18 +774,6 @@ NODE_ENV=production
 CLIENT_URL=https://your-frontend-domain.com
 ```
 
-### Docker (Optional)
-
-```dockerfile
-FROM node:18
-WORKDIR /app
-COPY package*.json ./
-RUN npm install --production
-COPY . .
-EXPOSE 5000
-CMD ["npm", "start"]
-```
-
 ### MongoDB Replica Set
 
 For production transactions, ensure your MongoDB is a replica set:
@@ -800,7 +785,7 @@ rs.status();
 
 ---
 
-## 📞 Support & Questions
+##  Support & Questions
 
 For issues or questions about the backend:
 
@@ -810,10 +795,6 @@ For issues or questions about the backend:
 
 ---
 
-## 📄 License
 
-MIT
 
----
 
-**Built with ❤️ for SortMyScene**
